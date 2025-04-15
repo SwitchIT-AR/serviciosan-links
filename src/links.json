@@ -1,0 +1,19 @@
+[
+  { "label": "ESPECIALIDAD POE CAPS", "color": "red" , "url": "https://docs.google.com/spreadsheets/d/1hczxE8SHRGTLnoicsOufv021RJyKWPig/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true" },
+  { "label": "HOSPITAL RAWSON - CARTERA DE PRESTADORES","color": "red" , "url": "https://docs.google.com/spreadsheets/d/12v2jBEo3nxtPt6V0-2v2w6Fd3fcqysfc/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true" },
+  { "label": "HOSPITAL MARCIAL QUIROGA - CARTERA DE PRESTADORES","color": "red" , "url": "https://docs.google.com/spreadsheets/d/1WGZ2e6w8K8WnFJSuRBkHrYLSkzMY4crT/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true" },
+  { "label": "TURNOS PARA NEURO INFANTIL HOSPITAL RAWSON","color": "red", "url": "https://docs.google.com/spreadsheets/d/1-ZrsUw_6aVVipuNM6WDtgXtMApyertASrNdXWleTkYI/edit?usp=sharing"},
+  { "label": "INGRESO A ANDES", "url": "https://andes.sanjuan.gob.ar/", "color": "blue" },
+  { "label": "MAPA CENTRO DE SALUD - ANDES", "url": "https://centrosdesalud.sanjuan.gob.ar/", "color": "blue" },
+  { "label": "PAGINA PARA VERIFICAR OBRA SOCIAL", "url": "https://servicioswww.anses.gob.ar/OOSS2/", "color": "blue" },
+  { "label": "RENTAS", "url": "https://www.sanjuandgr.gov.ar", "color": "blue" },
+  { "label": "OBRA SOCIAL PROVINCIA", "url": "https://www.obrasocial.sanjuan.gov.ar/dos/", "color": "blue" },
+  { "label": "CARGA DE BONOS DE CONSULTA OSP", "url": "https://www.dossanjuan.online/OspFacturar/Account/Login.aspx?ReturnUrl=%2fospfacturar", "color": "blue" },
+  { "label": "VERIFICACIÓN VEHÍCULAR", "url": "https://www.verificacionsanjuan.com.ar/solicita_turno.php#step-1", "color": "blue" },
+  { "label": "GLPI (CIUDADANO DIGITAL)", "url": "https://soporte.sanjuan.gob.ar/glpi/", "color": "blue" },
+  { "label": "TURISMO - DRIVE CON INFORMACIÓN ACTUALIZADA", "url": "https://drive.google.com/drive/folders/1i5oZE2ZizjCZueaxmcDbsV3WnpvJSpbb", "color": "blue" },
+  { "label": "RED-TULUM - página oficial", "url": "https://www.redtulum.gob.ar/", "color": "blue" },
+  { "label": "RED-TULUM formulario de sugerencias y reclamos", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfU8uPMMde-iL4o_i1g0tC2bd-RTZQ5R6OoasB-w4SdnAWs7w/viewform", "color": "blue" },
+  { "label": "CONSULTA DEL CODIGO DE FARMACIA", "url": "https://sdf.tandemdigital.net/callcenter", "color": "blue"  },
+  { "label": "REGISTRO CIVIL - Meterial de capacitacion", "url": "https://docs.google.com/spreadsheets/d/1LTWgzLVU5SzXH2D3LDJunoN425l5s_RYSIZskhMdn9o/edit?usp=drive_link", "color": "blue" }
+]
