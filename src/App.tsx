@@ -1,21 +1,23 @@
-import {Container, Grid, Paper, Title, Anchor, Button, Center} from '@mantine/core';
+import {Container, Title, Button, Center, SimpleGrid} from '@mantine/core';
 import {spotlight, Spotlight, SpotlightActionData} from "@mantine/spotlight";
 import {IconLink, IconSearch} from "tabler-icons";
 
 const links = [
+    { label: 'TURNOS PARA NEURO INFANTIL HOSPITAL RAWSON',color: 'red', url: 'https://docs.google.com/spreadsheets/d/1-ZrsUw_6aVVipuNM6WDtgXtMApyertASrNdXWleTkYI/edit?usp=sharing'},
+    { label: 'ESPECIALIDAD POE CAPS', color: 'red' , url: 'https://docs.google.com/spreadsheets/d/1hczxE8SHRGTLnoicsOufv021RJyKWPig/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true' },
+    { label: 'HOSPITAL RAWSON - CARTERA DE PRESTADORES',color: 'red' , url: 'https://docs.google.com/spreadsheets/d/12v2jBEo3nxtPt6V0-2v2w6Fd3fcqysfc/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true' },
+    { label: 'HOSPITAL MARCIAL QUIROGA - CARTERA DE PRESTADORES',color: 'red' , url: 'https://docs.google.com/spreadsheets/d/1WGZ2e6w8K8WnFJSuRBkHrYLSkzMY4crT/edit?usp=sharing&ouid=113135494724038327112&rtpof=true&sd=true' },
     { label: 'Ministerio de Salud - Cartera de Prestadores', url: 'https://docs.google.com/spreadsheets/d/19Xfpe_NT6tTFT5twYjrDSF12u39jYhNCPvNdqX2T2u0/edit?gid=0#gid=0' },
     { label: 'Registro de Llamadas - Ministerio de Salud 2', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfVqzUCfvxc3Z9tCVizStY9eHLTKp6P6ly-Br57nnjoXBrfVQ/viewform?usp=sf_link' },
     { label: 'Registro de reclamos del BOT', url: 'https://docs.google.com/forms/d/1laFO410o-2Vr_NUq3l5D-NNdcFkJoTx3BTr-0bWJPGk/edit' },
     { label: 'INGRESO A ANDES', url: 'https://andes.sanjuan.gob.ar/' },
     { label: 'BOT-SALUD-PERIFERIA', url: 'https://bot.sanjuan.gob.ar/lite/turnos/?m=channel-web&v=Fullscreen&options=%7B%22hideWidget%22%3Atrue%2C%22config%22%3A%7B%22enableReset%22%3Atrue%2C%22enableTranscriptDownload%22%3Atrue%7D%7D' },
     { label: 'MAPA CENTRO DE SALUD - ANDES', url: 'https://centrosdesalud.sanjuan.gob.ar/' },
-    { label: 'HOSPITAL RAWSON - CARTERA DE PRESTADORES', url: 'https://docs.google.com/spreadsheets/d/1flKF46Y-UmXYhdydWEtOk2N3UTVKPRF_ZSDFx49PEwA/edit?gid=0#gid=0' },
     { label: 'REGISTRO DE LLAMADOS HGR', url: 'https://forms.gle/CYnST3T2soVmG3328' },
     { label: 'PAGINA PARA VERIFICAR OBRA SOCIAL', url: 'https://servicioswww.anses.gob.ar/OOSS2/' },
-    { label: 'HOSPITAL MARCIAL QUIROGA - CARTERA DE PRESTADORES', url: 'https://docs.google.com/spreadsheets/d/13zHZ2okDDUfeoqVHa53s35pshgzz5Zetl-1YhS3P1Nk/edit?gid=0#gid=0' },
     { label: 'REGISTRO DE LLAMADOS HMQ', url: 'https://forms.gle/BZFEvEhFeoxLzYYR8' },
     { label: 'REGISTRO DE GESTIONES ANDES - HMQ', url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOKtsP5R9KN59fwqfjeIVY5Kzx0UM5UtS4QbHfprywgPWoDg/formResponse' },
-    { label: 'RENTAS', url: 'http://www.sanjuandgr.gov.ar' },
+    { label: 'RENTAS', url: 'https://www.sanjuandgr.gov.ar' },
     { label: 'RENTAS: Registro de llamadas', url: 'https://docs.google.com/forms/d/e/1FAIpQLScy8dTYIgTpxRbrCyBAPJMrV_lLMMwblk_Zkxr9O5RQaYBfAQ/viewform' },
     { label: 'OBRA SOCIAL PROVINCIA', url: 'http://www.obrasocial.sanjuan.gov.ar/dos/' },
     { label: 'REGISTRO DE LLAMADAS DE OBRA SOCIAL PROVINCIA', url: 'https://docs.google.com/forms/d/141Ybj6tCZ6VHqJFbImLjKwfhw6-tUL0ZXoCdQuzrCAY/edit' },
@@ -46,7 +48,8 @@ const links = [
     { label: 'RED-TULUM - página oficial', url: 'https://www.redtulum.gob.ar/' },
     { label: 'RED-TULUM - aplicación oficial', url: 'https://moovitapp.com/san_juan-6137/poi/Boulevard%20Oeste%20181/Tu%20ubicaci%C3%B3n%20actual/es-419?customerId=NPIdiV-P9Gcj-pA7yOXVPg&fll=-31.587695_-68.558612&tll=-31.535297_-68.605166' },
     { label: 'RED-TULUM documento de las paradas con conexion del sistema', url: 'https://docs.google.com/spreadsheets/d/16Ms_Ked0kSkzpTCO-ksCjIe3ov_y-pOmzuc199exHzY/edit#gid=0' },
-    { label: 'RED-TULUM formulario de sugerencias y reclamos', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfU8uPMMde-iL4o_i1g0tC2bd-RTZQ5R6OoasB-w4SdnAWs7w/viewform' }
+    { label: 'RED-TULUM formulario de sugerencias y reclamos', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfU8uPMMde-iL4o_i1g0tC2bd-RTZQ5R6OoasB-w4SdnAWs7w/viewform' },
+
 ];
 
 const actions: SpotlightActionData[] = links.map((link, index) => ({
@@ -79,17 +82,14 @@ export default function LandingLinks() {
                     placeholder: 'Buscar link...',
                 }}
             />
-            <Grid gutter="md">
-                {links.map((link, index) => (
-                    <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={index}>
-                        <Paper withBorder shadow="md" p="md" radius="md">
-                            <Anchor href={link.url} target="_blank" rel="noopener noreferrer">
-                                {link.label}
-                            </Anchor>
-                        </Paper>
-                    </Grid.Col>
+            <SimpleGrid cols={2} >
+                {links.map((link) => (
+
+                    <Button component={'a'} variant={"outline"} color={link.color} href={link.url} target="_blank" rel="noopener noreferrer">
+                        {link.label}
+                    </Button>
                 ))}
-            </Grid>
+            </SimpleGrid>
         </Container>
     );
 }
