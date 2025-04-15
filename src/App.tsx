@@ -1,4 +1,6 @@
-import { Container, Grid, Paper, Title, Anchor } from '@mantine/core';
+import {Container, Grid, Paper, Title, Anchor, Button, Center} from '@mantine/core';
+import {spotlight, Spotlight, SpotlightActionData} from "@mantine/spotlight";
+import {IconLink, IconSearch} from "tabler-icons";
 
 const links = [
     { label: 'Ministerio de Salud - Cartera de Prestadores', url: 'https://docs.google.com/spreadsheets/d/19Xfpe_NT6tTFT5twYjrDSF12u39jYhNCPvNdqX2T2u0/edit?gid=0#gid=0' },
@@ -47,12 +49,36 @@ const links = [
     { label: 'RED-TULUM formulario de sugerencias y reclamos', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfU8uPMMde-iL4o_i1g0tC2bd-RTZQ5R6OoasB-w4SdnAWs7w/viewform' }
 ];
 
+const actions: SpotlightActionData[] = links.map((link, index) => ({
+    id: `link-${index}`,
+    label: link.label,
+    description: link.url,
+    onClick: () => window.open(link.url, '_blank'),
+    leftSection: <IconLink size={20} stroke={1.5} />,
+}));
+
 export default function LandingLinks() {
     return (
         <Container size="lg" py="xl">
             <Title order={2} ta="center" mb="md">
                 Accesos rápidos - Servicios Agua Negra
             </Title>
+            <Center>
+            <Button leftSection={<IconSearch />} radius={"xl"} variant={"outline"} ta={"center"} onClick={spotlight.open} mb="md">
+                Buscar link
+            </Button>
+            </Center>
+            <Spotlight
+                actions={actions}
+                scrollable
+                maxHeight={450}
+                nothingFound="No se encontró ningún acceso..."
+                highlightQuery
+                searchProps={{
+                    leftSection: <IconSearch size={20} stroke={1.5} />,
+                    placeholder: 'Buscar link...',
+                }}
+            />
             <Grid gutter="md">
                 {links.map((link, index) => (
                     <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={index}>
