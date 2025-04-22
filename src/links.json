@@ -7,7 +7,7 @@
   { "label": "PAGINA PARA VERIFICAR OBRA SOCIAL", "url": "https://servicioswww.anses.gob.ar/OOSS2/", "color": "blue" },
   { "label": "RENTAS", "url": "https://www.sanjuandgr.gov.ar", "color": "blue" },
   { "label": "OBRA SOCIAL PROVINCIA", "url": "https://www.obrasocial.sanjuan.gov.ar/dos/", "color": "blue" },
-  { "label": "CARGA DE BONOS DE CONSULTA OSP", "url": "https://www.dossanjuan.online/OspFacturar/Account/Login.aspx?ReturnUrl=%2fospfacturar", "color": "blue" },
+  { "label": "CARGA DE BONOS DE CONSULTA OSP", "url": "http://www.dossanjuan.online/OspFacturar/Account/Login.aspx?ReturnUrl=%2fospfacturar", "color": "blue" },
   { "label": "VERIFICACIÓN VEHÍCULAR", "url": "https://www.verificacionsanjuan.com.ar/solicita_turno.php#step-1", "color": "blue" },
   { "label": "GLPI (CIUDADANO DIGITAL)", "url": "https://soporte.sanjuan.gob.ar/glpi/", "color": "blue" },
   { "label": "TURISMO - DRIVE CON INFORMACIÓN ACTUALIZADA", "url": "https://drive.google.com/drive/folders/1i5oZE2ZizjCZueaxmcDbsV3WnpvJSpbb", "color": "blue" },
